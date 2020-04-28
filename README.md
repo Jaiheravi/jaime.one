@@ -1,2 +1,0 @@
-# jaime.one
-Personal website

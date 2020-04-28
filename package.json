@@ -1,0 +1,21 @@
+{
+  "name": "jaime.one",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve src/index.pug",
+    "build": "parcel build src/index.pug -d docs",
+    "clear": "rm -rf .cache dist docs"
+  },
+  "devDependencies": {
+    "@concisecss/core": "github:ConciseCSS/core#master",
+    "@jaiheravi/minos": "github:Jaiheravi/Minos#master",
+    "concise.css": "github:ConciseCSS/concise.css#dev",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.27",
+    "pug": "^2.0.4"
+  }
+}
