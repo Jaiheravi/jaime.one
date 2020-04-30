@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve src/index.pug",
     "build": "parcel build --no-minify src/index.pug -d docs",
-    "clear": "rm -rf .cache dist docs"
+    "clear": "rm -rf .cache dist"
   },
   "devDependencies": {
     "@concisecss/core": "github:ConciseCSS/core#master",
