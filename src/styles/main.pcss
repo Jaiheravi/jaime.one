@@ -1,19 +1,108 @@
-@font-face {
-  font-family: 'Manrope';
-  src: url('./Manrope[wght].ttf') format('truetype-variations');
-  font-weight: 1 900;
- }
-
 @import '@concisecss/core';
 @import '@jaiheravi/minos';
 
 :root {
-  --font-primary: 'Manrope', sans-serif;
-  --font-secondary: 'Manrope', sans-serif;
+  --font-size-large: 20px;
+  --font-primary: zeitung, sans-serif;
+  --font-secondary: kepler-std-semicondensed-dis, serif;
+  --letter-spacing: 0.05em;
+  --color-base-primary: #9f4545;
+  --color-background-body: white;
+  --color-background-light: #efe8d5;
+  --color-base-lines: #111;
+  --color-text-heading: #111;
+  --color-text-primary: #111;
 }
 
-h1 {
-  font-size: 15;
-  margin-top: 2lh;
+em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+body {
+  margin: 1lh;
+  background-color: var(--color-background-light);
+}
+
+.main-nav {
+  padding: 2lh 0;
+
+  a {
+    margin-right: 2em;
+    color: var(--color-text-primary)
+  }
+
+  .-active {
+    color: var(--color-base-primary);
+    border-bottom: 4px solid var(--color-base-primary);
+  }
+  .-right { float: right; }
+}
+
+.main-header {
+  padding: 2lh 0;
+}
+
+.name {
+  font-size: 16;
   font-weight: 900;
+  line-height: 0.9;
+}
+
+.intro {
+  font-size: 3;
+}
+
+.main-section {
+  border-top: 8px solid var(--color-base-lines);
+  padding-bottom: 2lh;
+  margin-top: 2lh;
+}
+
+.heading {
+  font-size: 8;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+
+  small {
+    font-family: var(--font-primary);
+    color: var(--color-base-primary);
+    display: block;
+    font-size: 1;
+  }
+}
+
+.sub-section {
+  margin-top: 2lh;
+}
+
+.subheading {
+  margin-top: 1lh;
+
+  small {
+    display: block;
+    font-family: var(--font-primary);
+    font-size: 1;
+    font-weight: normal;
+  }
+
+  a {
+    color: var(--color-base-primary);
+    margin: 1em;
+  }
+}
+
+.publication-block {
+  list-style: none;
+  margin-bottom: 1lh;
+
+  p {
+    margin: 0;
+  }
+}
+
+.main-footer {
+  margin-top: 2lh;
+  padding-bottom: 2lh;
 }
