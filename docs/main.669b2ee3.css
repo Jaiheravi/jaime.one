@@ -738,6 +738,18 @@ body {
   line-height: 2rem;
 }
 
+.name:hover,
+  .name:focus {
+    text-decoration: none;
+    color: var(--color-base-primary);
+  }
+
+.name small {
+    display: block;
+    font-size: 0.6944rem;
+    line-height: 1.2;
+  }
+
 .main-section {
   margin-bottom: 6rem;
 }
@@ -797,4 +809,4 @@ img.full-width {
 }
 
 
-/*# sourceMappingURL=/main.9588c271.css.map */
+/*# sourceMappingURL=/main.669b2ee3.css.map */
