@@ -634,111 +634,112 @@ column[default~="+11"] { margin-left: var(--width-11); }
 }
 
 :root {
-  --font-size-large: 20px;
+  --font-size-large: 18px;
   --font-primary: zeitung, sans-serif;
   --font-secondary: kepler-std-semicondensed-dis, serif;
-  --letter-spacing: 0.05em;
-  --color-base-primary: #9f4545;
-  --color-background-body: white;
-  --color-background-light: #efe8d5;
-  --color-base-lines: #111;
-  --color-text-heading: #111;
-  --color-text-primary: #111;
+  --letter-spacing: 0.1em;
+  --color-base-primary: #ab3f6c;
+  --color-background-body: #fcf1dd;
+  --color-text-heading: #363a5d;
+  --color-text-primary: #363a5d;
 }
 
-em {
-  text-decoration: underline;
-  font-style: normal;
-}
 
 body {
   margin: 1.5rem;
-  background-color: var(--color-background-light);
 }
 
+
 .main-nav {
-  padding: 3rem 0;
+  padding: 2.25rem 0;
+  margin-bottom: 4.5rem;
+  font-size: 1rem;
 }
+
 
 .main-nav a {
     margin-right: 2em;
     color: var(--color-text-primary)
   }
 
+
 .main-nav .-active {
     color: var(--color-base-primary);
     border-bottom: 4px solid var(--color-base-primary);
   }
 
-.main-nav .-right { float: right; }
-
-.main-header {
-  padding: 3rem 0;
-}
 
 .name {
-  font-size: 12.8392rem;
-  font-weight: 900;
-  line-height: 0.9;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
-.intro {
-  font-size: 1.2rem;
-}
 
 .main-section {
-  border-top: 8px solid var(--color-base-lines);
-  padding-bottom: 3rem;
-  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
+
 
 .heading {
   font-size: 2.986rem;
   text-align: right;
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing);
 }
+
 
 .heading small {
     font-family: var(--font-primary);
     color: var(--color-base-primary);
     display: block;
-    font-size: 0.8333rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
   }
 
-.sub-section {
-  margin-top: 3rem;
+
+.project-cover {
+  margin-bottom: 1.5rem;
 }
 
+
 .subheading {
-  margin-top: 1.5rem;
+  margin-top: 0.7rem;
+  text-align: right;
+  font-size: 2.986rem;
+  font-weight: 900;
 }
+
 
 .subheading small {
     display: block;
     font-family: var(--font-primary);
     font-size: 0.8333rem;
     font-weight: normal;
+    margin-top: -0.2rem;
   }
+
 
 .subheading a {
     color: var(--color-base-primary);
-    margin: 1em;
   }
 
-.publication-block {
-  list-style: none;
-  margin-bottom: 1.5rem;
-}
 
-.publication-block p {
-    margin: 0;
+.contact-section .heading {
+    text-align: center;
   }
+
+
+.contact-section small {
+    margin-top: 0.75rem;
+  }
+
 
 .main-footer {
   margin-top: 3rem;
   padding-bottom: 3rem;
+  font-size: 0.8333rem;
 }
 
 
-/*# sourceMappingURL=/main.cf142377.css.map */
+/*# sourceMappingURL=/main.f90de42f.css.map */
