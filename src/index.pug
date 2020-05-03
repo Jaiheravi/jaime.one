@@ -5,39 +5,35 @@ html(lang='en')
     title Jaime Hernández - Web Engineering
     link(rel='stylesheet' href='https://use.typekit.net/vam5gsl.css')
     link(rel='stylesheet' href='./styles/main.pcss')
-  body
-    container
-      nav.main-nav
-        grid
-          column(default='4')
-            a(href='/').-active Work
-            // a(href='#tools') Blog
+  body(container)
+    nav(grid).main-nav
+      ul(column='4')
+        a(href='/').-active Work
+        // a(href='#tools') Blog
 
-          column(default='4' style="text-align: center")
-            a(href='/').name Jaime Hernández
+      ul(column='4').center
+        a(href='/').name Jaime Hernández
 
-          column(default='4' style="text-align: right")
-            a(mailto='contact@jaime.one') Email
-            a(href='https://twitter.com/jaiheravi') Twitter
-            a(href='https://github.com/jaiheravi') Github
+      ul(column='4').right
+        a(mailto='contact@jaime.one') Email
+        a(href='https://twitter.com/jaiheravi') Twitter
+        a(href='https://github.com/jaiheravi') Github
 
+    section.main-section
+      img(src='./images/concise-cover.svg').project-cover.full-width
 
-      section.main-section
-        img(src='./images/concise-cover.svg' width="100%").project-cover
+      div(grid)
+        div(column='6')
+          h3.subheading
+            a(href="https://concisecss.com") Concise CSS
+            small CSS Preprocessor & Framework
 
-        grid
-          column(default='6')
-            h3.subheading
-              a(href="https://concisecss.com") Concise CSS
-              small CSS Preprocessor & Framework
+        div(column='6')
+          p Concise CSS is a project composed by a custom CSS processor based on PostCSS and a UI framework that provides base styles and components for any website.
 
-          column(default='6')
-            p Concise CSS is a project composed by a custom CSS processor based on PostCSS and a UI framework that provides base styles and components for any website.
+    section.main-section.contact-section
+      h2.heading Let's get to work!
+        small: a(mailto='contact@jaime.one') contact@jaime.one
 
-
-      section.main-section.contact-section
-        h2.heading Let's get to work!
-          small: a(mailto='contact@jaime.one') contact@jaime.one
-
-      footer.main-footer
-        small &copy; 2020 Jaime Hernández
+    footer.main-footer
+      small &copy; 2020 Jaime Hernández
