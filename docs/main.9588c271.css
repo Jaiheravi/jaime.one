@@ -692,8 +692,8 @@ Default sizes and positions */
   --font-primary: zeitung, sans-serif;
   --font-secondary: kepler-std-semicondensed-dis, serif;
   --letter-spacing: 0.1em;
-  --color-base-primary: #534a99;
-  --color-background-body: #ebedf1;
+  --color-base-primary: #91405e;
+  --color-background-body: #f1f1eb;
   --color-text-heading: #303c49;
   --color-text-primary: #303c49;
 }
@@ -797,4 +797,4 @@ img.full-width {
 }
 
 
-/*# sourceMappingURL=/main.d823ff71.css.map */
+/*# sourceMappingURL=/main.9588c271.css.map */
