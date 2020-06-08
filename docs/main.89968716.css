@@ -688,30 +688,51 @@ Default sizes and positions */
 }
 
 :root {
-  --font-size-large: 18px;
-  --font-primary: zeitung, sans-serif;
-  --font-secondary: kepler-std-semicondensed-dis, serif;
+  --font-size-large: 22px;
+  --font-primary: bilo, sans-serif;
+  --font-secondary: arpona, sans-serif;
   --letter-spacing: 0.1em;
-  --color-base-primary: #91405e;
-  --color-background-body: #f1f1eb;
-  --color-text-heading: #303c49;
-  --color-text-primary: #303c49;
+  --color-base-primary: #ab4242;
+  --color-background-body: white;
+  --color-text-heading: #253748;
+  --color-text-primary: #253748;
+
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+[container] {
+  --grid-container-width: 1400px;
 }
 
 body {
   margin: 1.5rem;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-text-primary)
+}
+
 .main-nav {
-  padding: 2.25rem 0;
-  margin-bottom: 4.5rem;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
   font-size: 1rem;
 }
 
 .main-nav a {
     margin-right: 2em;
-    color: var(--color-text-primary)
   }
+
+.main-nav a:hover,
+    .main-nav a:focus {
+      text-decoration: none;
+      color: var(--color-base-primary);
+    }
 
 .main-nav .-active {
     color: var(--color-base-primary);
@@ -731,11 +752,12 @@ body {
     }
 
 .name {
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   font-size: 1rem;
   line-height: 2rem;
+  font-weight: 700;
+  margin: 0 !important;
 }
 
 .name:hover,
@@ -748,6 +770,7 @@ body {
     display: block;
     font-size: 0.6944rem;
     line-height: 1.2;
+    font-weight: inherit;
   }
 
 .main-section {
@@ -772,9 +795,9 @@ body {
 }
 
 .subheading {
-  margin-top: 0.7rem;
+  margin-top: 1.1rem;
   text-align: right;
-  font-size: 2.986rem;
+  font-size: 2.4883rem;
   font-weight: 900;
 }
 
@@ -783,11 +806,8 @@ body {
     font-family: var(--font-primary);
     font-size: 0.8333rem;
     font-weight: normal;
-    margin-top: -0.2rem;
-  }
-
-.subheading a {
-    color: var(--color-base-primary);
+    margin-top: -0.1rem;
+    letter-spacing: 0.05em;
   }
 
 .contact-section .heading {
@@ -809,4 +829,4 @@ img.full-width {
 }
 
 
-/*# sourceMappingURL=/main.669b2ee3.css.map */
+/*# sourceMappingURL=/main.89968716.css.map */
