@@ -3,19 +3,17 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel serve src/index.pug",
-    "build": "rm docs/*(.css|.map|.svg); parcel build --no-minify src/index.pug -d docs",
-    "clear": "rm -rf .cache dist"
+    "start:prod": "node ./dist/server.js",
+    "build": "tsc",
+    "start": "nodemon"
   },
   "devDependencies": {
-    "@concisecss/core": "github:ConciseCSS/core#master",
-    "@jaiheravi/minos": "github:Jaiheravi/Minos#master",
-    "concise.css": "github:ConciseCSS/concise.css#dev",
-    "parcel-bundler": "^1.12.4",
-    "postcss": "^7.0.27",
-    "pug": "^2.0.4"
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3"
   }
 }
