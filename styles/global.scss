@@ -1,0 +1,30 @@
+// Settings
+:root {
+
+}
+
+// Base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+p + p {
+  margin-top: 1.5rem;
+
+  @media (width <= 30em) {
+    height: 100px;
+  }
+}
